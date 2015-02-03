@@ -33,8 +33,9 @@ with_machine_options({
 
 # declare a machine to act as our web server
 machine 'chefserver-1' do
-  recipe 'iptables'
+  recipe 'provision::iptables'
   recipe 'chef_server::default'
+  recipe 'chef_server::manage'
   tag 'chefserver'
   converge true
 end

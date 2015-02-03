@@ -1,4 +1,8 @@
-include_recipe 'iptables'
+# include_recipe 'iptables'
 
-iptables_rule "http"
-iptables_rule "https"
+# iptables_rule "http"
+# iptables_rule "https"
+
+service 'iptables' do
+  action :stop
+end

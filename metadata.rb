@@ -6,4 +6,4 @@ description      'Installs/Configures provision'
 long_description 'Installs/Configures provision'
 version          '0.1.0'
 
-depends 'iptables'
+# depends 'iptables'
